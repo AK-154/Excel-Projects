@@ -48,4 +48,10 @@ This project is an Excel workbook that tracks out-of-home (OOH) advertising plac
 - Explore a database for long-term scalability.
 
 ---
+
+![image](https://github.com/user-attachments/assets/05a0502f-2b72-431a-bd68-aff713f07970)
+
+
+
 Questions? Reach out or fork this repo to adapt it!
+
