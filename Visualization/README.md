@@ -61,5 +61,5 @@ Use the dashboard daily to oversee sales and payments. Let me know if you need a
 
 ---
 
-![image](https://github.com/user-attachments/assets/8f9370b6-0319-4697-a24b-27d53ffc2863)
+![image](https://github.com/user-attachments/assets/6c6b0298-ea67-41b1-a1da-4fcbd4dc5580)
 
