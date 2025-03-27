@@ -43,6 +43,28 @@ This project is an Excel workbook that tracks out-of-home (OOH) advertising plac
   - `Workbook_Open`: Hides sheets on startup.
   - `LoginButton_Click`: Controls sheet visibility by password.
 
+## VBA Code
+Below are the key VBA scripts that control access to the workbook's sheets.
+
+### Workbook_Open Event
+This code runs when the workbook is opened. It hides all sheets except the "Intro" sheet and shows the login form.
+
+```vba
+Private Sub Workbook_Open()
+    ' Hide all sheets except a default one
+    Dim ws As Worksheet
+    For Each ws In Worksheets
+        If ws.Name <> "Intro" Then
+            ws.Visible = xlSheetVeryHidden
+        End If
+    Next ws
+    ' Show login form
+    LoginForm.Show
+End Sub
+
+
+
+
 ## Next Steps
 - Add more brands as data grows.
 - Explore a database for long-term scalability.
