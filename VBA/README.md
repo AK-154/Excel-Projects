@@ -46,8 +46,8 @@ This project is an Excel workbook that tracks out-of-home (OOH) advertising plac
 ## VBA Code
 Below are the key VBA scripts that control access to the workbook's sheets.
 
-### Workbook_Open Event
-This code runs when the workbook is opened. It hides all sheets except the "Intro" sheet and shows the login form.
+### Workbook_Open
+This code runs when the workbook is opened. It hides all sheets except the "Intro" sheet and shows the login form:
 
 ```vba
 Private Sub Workbook_Open()
@@ -64,8 +64,8 @@ End Sub
 
 ```
 
-# Login Form
-This code runs when the workbook is opened. It hides all sheets except the "Intro" sheet and shows the login form.
+### LoginButton_Click
+This code runs when the user clicks the login button on the form:
 
 ```vba
 Private Sub Label1_Click()
