@@ -62,8 +62,53 @@ Private Sub Workbook_Open()
     LoginForm.Show
 End Sub
 
+```
 
+# Login Form
+This code runs when the workbook is opened. It hides all sheets except the "Intro" sheet and shows the login form.
 
+```vba
+Private Sub Label1_Click()
+
+End Sub
+
+Private Sub LoginButton_Click()
+Dim password As String
+' Get the value from the TextBox named "password"
+password = Me.password.Value
+' Control sheet visibility based on password
+    If password = "1678" Then
+        ' Password for Douze 2: Unhide "Douze 2" and "Intro"
+        Worksheets("Intro").Visible = xlSheetVisible
+        Worksheets("Douze 2").Visible = xlSheetVisible
+        MsgBox "Welcome! You have access to Douze 2 data."
+    ElseIf password = "2467" Then
+        ' Password for Chapil late: Unhide "Chapil late" and "Intro"
+        Worksheets("Intro").Visible = xlSheetVisible
+        Worksheets("Chapil late").Visible = xlSheetVisible
+        MsgBox "Welcome! You have access to Chapil late data."
+    ElseIf password = "4782" Then
+        ' Password for El mond: Unhide "El mond" and "Intro"
+        Worksheets("Intro").Visible = xlSheetVisible
+        Worksheets("El mond").Visible = xlSheetVisible
+        MsgBox "Welcome! You have access to El mond data."
+    ElseIf password = "3509" Then
+        ' Password to see all: Unhide all sheets
+        Dim ws As Worksheet
+        For Each ws In Worksheets
+            ws.Visible = xlSheetVisible
+        Next ws
+        MsgBox "Welcome! You have access to all data."
+    Else
+        MsgBox "Access denied. Invalid password."
+End If
+    Unload Me
+End Sub
+
+Private Sub UserForm_Click()
+
+End Sub
+```
 
 ## Next Steps
 - Add more brands as data grows.
