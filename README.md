@@ -1,5 +1,5 @@
 # Excel Projects
-Welcome to my collection of Excel projects! Each project is in its own folder with a README for more details.
+I'm excited to present my Excel projects! Each is neatly organized in its own folder with a detailed README. Please choose the area you'd like to evaluate me on and explore the corresponding project!
 
 - [Visualizations](./Visualization)
 - [VBA Code](./VBA)
